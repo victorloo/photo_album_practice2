@@ -15,3 +15,11 @@
 <% end %>
 
 <%= link_to 'Back to index', photos_path %>
+
+<% if @photo.errors.present? %>
+  <ul>
+    <% @photo.errors.each do |error, message| %>
+      <li> <%= "#{error.capitalize}  #{message}" %></li>
+    <% end %>
+  </ul>
+<% end %>
