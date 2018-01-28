@@ -17,9 +17,9 @@
   <%= f.text_field :description %>
 
   <%= f.label :file_location %>
-  <%= f.text_field :file_location %>
+  <%= f.file_field :file_location %>
 
   <%= f.submit %>
 <% end %>
 
-<%= link_to 'Back to index', photos_path %>
+<p><%= link_to 'Back to index', photos_path %></p>
